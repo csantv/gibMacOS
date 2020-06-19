@@ -134,6 +134,8 @@ class Utils:
             test_path = "\\".join([x.replace("\\", "") for x in test_path.split("\\\\")])
 
     def grab(self, prompt, **kwargs):
+        # do nothing
+        return
         # Takes a prompt, a default, and a timeout and shows it with that timeout
         # returning the result
         timeout = kwargs.get("timeout", 0)
