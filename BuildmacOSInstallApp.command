@@ -68,14 +68,7 @@ class buildMacOSInstallApp:
             print("Q. Quit")
             print("")
             fold = self.u.grab("Please drag and drop the output folder from gibMacOS here:  ")
-            print("")
-            if fold.lower() == "q":
-                self.u.custom_quit()
-            f_path = self.u.check_path(fold)
-            if not f_path:
-                print("That path does not exist!\n")
-                self.u.grab("Press [enter] to return...")
-                continue
+            f_path = sys.argv[-1]
             # Let's check if it's a folder.  If not, make the next directory up the target
             if not os.path.isdir(f_path):
                 f_path = os.path.dirname(os.path.realpath(f_path))
