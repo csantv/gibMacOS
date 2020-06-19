@@ -8,5 +8,5 @@ jobs:
             - name: checkout
               uses: actions/checkout@v2
             - shell: bash
-              run: .github/actions/build.sh
+              run: .github/workflows/build.sh
 
