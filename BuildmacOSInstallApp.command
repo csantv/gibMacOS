@@ -136,6 +136,7 @@ class buildMacOSInstallApp:
                 print("")
                 print("Created:  {}".format(install_app))
                 print("Saved to: {}".format(os.path.join(f_path,install_app)))
+                sys.exit()
                 print("")
                 self.u.grab("Press [enter] to return...")
             except Exception as e:
